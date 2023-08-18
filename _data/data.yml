@@ -1,0 +1,167 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Ansh Gupta
+    tagline: CS Student @ Georgia Tech
+    avatar: pfp.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: ansh.guptaca.2004@gmail.com
+    timezone: America/EST
+    citizenship: USA
+    linkedin: gupta-ansh
+    github: anshgupta1234
+    pdf: http://www.africau.edu/images/default/sample.pdf
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Native
+
+        - idiom: Hindi
+          level: Professional
+
+    interests:
+      title: Hobbies
+      info:
+        - item: Teaching
+          link:
+
+        - item: Video Creation
+          link:
+
+        - item: History / Philosophy
+          link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Research-focused CS student with a passion for software engineering, physics, and math. 
+      Currently trying to simulate real-world phenomena with high-performance computing.
+      Experienced in full-stack web and app development for social good.
+
+education:
+    title: Education
+    info:
+      - degree: BSc in Computer Science
+        concentration: | 
+          Concentrations in AI & Simulations
+        university: Georgia Institute of Technology
+        time: 2022 - 2025
+
+experiences:
+    title: Experiences
+    info:
+      - role: Research Assistant
+        time: Aug 2022 - Present
+        company: Computational Physics Group @ Georgia Tech
+        url: https://comp-physics.group/
+        details: |
+          - Integrated 16 bug fixes and code enhancements in MFC, an open-source, high-performance fluid dynamics solver
+          - Introduced new physics in MFC to include immersed solid objects, with only a <0.5% increase in the runtime
+          - Leveraged OpenACC and OpenMPI to parallelize this feature for exascale supercomputers
+          - Expanded CI tests on GitHub to include 4 new compiler and build scenarios
+          - Won the President’s Undergraduate Research Award ($1500) for Summer 2023
+          - Pursuing groundbreaking project to simulate vapor cones formed by supersonic jets for the first time
+        video: vorticity.mp4
+        caption: My Simulation of Flow Past a Cylinder in MFC
+
+      - role: Research Lead
+        time: Aug 2020 – Jan 2022
+        company: Aspiring Scholars Directed Research Program
+        url: https://asdrp.org/
+        details: |
+            - Guided a team of 5 researchers in building a plantable microcomputer to collect & analyze soil data. 
+            - Integrated various sensors into an Arduino and programmed a wifi module to send their output to an SQL database.
+            - Increased community garden’s yields by ~15%
+            - Presented the group’s research at 2 expos and 4 colloquiums.
+            - Won the ASDRP Leadership Award out of ~100 students.
+
+projects:
+    title: Projects
+    assignments:
+      - title: <b>MedTrak</b> | 1st Place @ TitanHacks
+        link: https://devpost.com/software/medtrak
+        tagline: |
+          - Programmed a blockchain in Solidity to track the availability of COVID-19 relief equipment.
+          - Built an endpoint in Flask to send data from the blockchain to the frontend for it to be displayed on a heatmap.
+
+      - title: "<b>ResuMatch</b> | 1st Place @ #TechTakesOnUnemployment Challenge"
+        link: https://devpost.com/software/resumatch-co6bua
+        tagline: |
+          - Scraped training data for an NLP model that helps the unemployed find work by analyzing soft skills on their CV.
+          - Developed a website in React for users to upload their CV’s and see job listings.
+
+      - title: <b>HealthyRef</b> | Personal Project
+        tagline: |
+          - Engineered an app in React Native that utilizes ingredients from a virtual fridge to recommend recipes.
+          - Integrated AWS Rekognition to allow users to scan ingredients with their camera.
+
+organizations:
+    title: Organizations
+    info:
+      - role: Board Member
+        time: August 2020 - Present
+        company: Shooting Stars Foundation
+        url: https://shooting-stars-foundation.org/
+        details: |
+          - Led 50 volunteers in developing entrepreneurship programs, tech camps, and hackathons.
+          - Used revenue to sponsor the education of underprivileged students & break the cycle of poverty.
+          - Created the ambassador program and launched it in 3 new countries.
+          - Raised $100,000 and provided for the education of over 80 undergraduates with 700+ volunteer hours.
+
+
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+#     papers:
+#       - title: The Art of Computer Programming
+#         link: "#"
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Java
+        level: 98%
+
+      - name: Python
+        level: 98%
+
+      - name: MERN Stack
+        level: 98%
+
+      - name: Fortran
+        level: 95%
+
+      - name: OpenACC, OpenMPI
+        level: 90%
+
+      - name: Git
+        level: 85%
+
+      - name: C, C#
+        level: 60%

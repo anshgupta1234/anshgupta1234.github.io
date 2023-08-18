@@ -1,0 +1,39 @@
+{% assign organizations = site.data.data.organizations %}
+{% if organizations %}
+<section class="section organizations-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-sitemap fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ organizations.title }}
+  </h2>
+
+  {% for organization in organizations.info %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="job-title">{{ organization.role }}</h3>
+        <div class="time">{{ organization.time }}</div>
+      </div><!--//upper-row-->
+
+      <div class="company">
+        <a href={{ organization.url }}>{{ organization.company }}</a>
+      </div>
+
+    </div><!--//meta-->
+
+    {% if organization.details %}
+    <div class="details">
+      {{ organization.details | markdownify }}
+    </div><!--//details-->
+    {% endif %}
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
+
